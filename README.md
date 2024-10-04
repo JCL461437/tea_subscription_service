@@ -21,6 +21,8 @@ The database and schema for the Tea Subscription Service API is listed below.
 
 ## General Information 
 
+* API version: version one (V1)
+
 * Ruby version: Ruby 3.2.2
 
 * Rails version: Rails 7.1.4
