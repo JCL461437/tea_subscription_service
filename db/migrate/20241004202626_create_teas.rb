@@ -1,4 +1,4 @@
-class CreateTea < ActiveRecord::Migration[7.1]
+class CreateTeas < ActiveRecord::Migration[7.1]
   def change
     create_table :teas do |t|
       t.string :title
