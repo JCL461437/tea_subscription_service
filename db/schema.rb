@@ -28,8 +28,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_04_203014) do
     t.bigint "tea_id", null: false
     t.string "title"
     t.decimal "price", precision: 8, scale: 2
-    t.string "status", default: "active", null: false
-    t.string "frequency", null: false
+    t.string "status", default: "active"
+    t.string "frequency"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_subscriptions_on_customer_id"

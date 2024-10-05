@@ -5,7 +5,7 @@ class CreateSubscriptions < ActiveRecord::Migration[7.1]
       t.references :tea, null: false, foreign_key: true
       t.string :title
       t.decimal :price, precision: 8, scale: 2 #currency set up 
-      t.string :status default: 'active'
+      t.string :status, default: 'active'
       t.string :frequency
 
       t.timestamps
