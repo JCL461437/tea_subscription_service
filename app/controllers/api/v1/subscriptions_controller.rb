@@ -27,4 +27,12 @@ class Api::V1::SubscriptionsController < ApplicationController
       render json: { error: 'Subscription attempt failed, try re-entering your customer email or tea name' }, status: 422
     end
   end
+
+  def update
+
+  end
+
+  def index
+    
+  end
 end

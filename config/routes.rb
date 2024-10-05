@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       # resources :subscription, only: [:create, :destroy, :index]
 
       post "/subscribe", to: "subscriptions#create"
-      delete "/unsubscribe", to: "subscriptions#destroy"
+      patch "/unsubscribe", to: "subscriptions#update"
       get "/subscriptions", to: "subscriptions#index"
     end
   end

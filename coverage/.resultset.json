@@ -21,6 +21,57 @@
           null
         ]
       },
+      "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/spec/models/subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/app/models/subscription.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/spec/models/tea_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/app/models/tea.rb": {
         "lines": [
           1,
@@ -31,6 +82,104 @@
           1,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/spec/requests/api/v1/subscription_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -74,19 +223,6 @@
           null
         ]
       },
-      "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/app/models/subscription.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/janlehigh/turing/4mod/intermission/tea_subscription_service/app/serializers/subscription_serializer.rb": {
         "lines": [
           1,
@@ -115,6 +251,6 @@
         ]
       }
     },
-    "timestamp": 1728167873
+    "timestamp": 1728168294
   }
 }
