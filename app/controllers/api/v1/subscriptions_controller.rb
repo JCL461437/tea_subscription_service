@@ -29,10 +29,14 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def update
+    subscription = Subscription.find(params[:subscription])
 
+    subscription.cancel
+
+    render json: SubscriptionSerializer.new(subscription)
   end
 
   def index
-    
+
   end
 end

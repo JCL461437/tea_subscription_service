@@ -7,7 +7,7 @@ class Subscription < ApplicationRecord
   validates :status, presence: true
   validates :frequency, presence: true
 
-  def change_status
+  def cancel
     if self.status == "active"
       self.status = "cancelled"
     end
