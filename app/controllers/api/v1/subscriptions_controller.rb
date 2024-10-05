@@ -5,7 +5,7 @@ class Api::V1::SubscriptionsController < ApplicationController
     tea = Tea.find_by(title: params[:tea])
     frequency = params[:frequency]
     
-    unless customer && tea
+    if customer.blank? || tea.blank? || frequency.blank? 
       render json: { error: 'Subscription attempt failed, try re-entering your customer email and tea name' }, status: 404
       return
     end
