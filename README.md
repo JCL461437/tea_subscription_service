@@ -11,7 +11,11 @@ Further details about the applications JSON response, endpoints, dependencies, a
 The Tea Subscription Service API has three endpoints. 
 
 ### `Subscribe a customer to a tea subscription`
+To subscribe a customer to a tea subscription you must hit the following API endpoint `/api/v1/subscribe?customer=customer_email.com&tea=title_of_tea&frequency=subscription_frequency`. The first query parameter will asign the subscription to a particular existing customer, with the second paramter matches that customer with the tea they are creating a subscription for. The final query parameter determines the frequency of their payment for the tea they want to purchase. 
 
+This will return the following JSON: 
+
+This will return the following JSON endpoint 
 ### `Cancel a customer’s tea subscription`
 
 ### `See all of a customer’s subsciptions (active and cancelled)`
