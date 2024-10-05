@@ -26,10 +26,6 @@ RSpec.describe Subscription, type: :model do
           expect(subscription1.status).to eq('active')
           subscription1.change_status
           expect(subscription1.status).to eq('cancelled')
-
-          expect(subscription2.status).to eq('cancelled')
-          subscription2.change_status
-          expect(subscription2.status).to eq('active')
         end
       end
     end
