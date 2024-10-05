@@ -18,6 +18,7 @@ The Tea Subscription Service API has three endpoints.
 
 ## Database and Schema 
 The database and schema for the Tea Subscription Service API is listed below. 
+<img width="736" alt="Screenshot 2024-10-05 at 8 44 20 AM" src="https://github.com/user-attachments/assets/6db24780-3e4c-4090-a063-24060010a3d8">
 
 ## General Information 
 
