@@ -12,7 +12,6 @@ class SubscriptionSerializer
     }
   end
 
-  # Define custom attribute for customer information
   attribute :customer_information do |subscription|
     {
       first_name: subscription.customer.first_name,
