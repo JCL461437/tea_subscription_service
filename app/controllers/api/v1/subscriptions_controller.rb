@@ -1,10 +1,18 @@
 class Api::V1::SubscriptionsController < ApplicationController
 
   def create
-    customer = Customer.find(params[:customer_id])
-    tea = Tea.find(params[:tea_id])
+    customer = Customer.where(email: params[:customer])
+    tea = Tea.where(title: params[:tea])
+    frequency = params[:frequency]
+    title = "Subscription for #{tea} tea."
 
-    subscription = Subscription.create(customer, tea)
+    subscription = Subscription.create(
+      customer: customer,
+      tea: tea,
+      title: title,
+      price: 2.0,
+      frequency: frequency
+      )
 
     if subscription.save
       render json: SubscriptionSerializer.new.new_subscription(customer, tea, subscription), status: 200
