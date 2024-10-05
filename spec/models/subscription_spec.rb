@@ -24,7 +24,7 @@ RSpec.describe Subscription, type: :model do
           subscription2 = Subscription.create!(customer: customer2, tea: tea, title: 'Green Tea Subscription', price: 14.00, status: 'cancelled', frequency: 'weekly')
 
           expect(subscription1.status).to eq('active')
-          subscription1.change_status
+          subscription1.cancel
           expect(subscription1.status).to eq('cancelled')
         end
       end
