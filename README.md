@@ -13,12 +13,36 @@ The Tea Subscription Service API has three endpoints.
 ### `Subscribe a customer to a tea subscription`
 To subscribe a customer to a tea subscription you must hit the following API endpoint `/api/v1/subscribe?customer=customer_email.com&tea=title_of_tea&frequency=subscription_frequency`. The first query parameter will asign the subscription to a particular existing customer, with the second paramter matches that customer with the tea they are creating a subscription for. The final query parameter determines the frequency of their payment for the tea they want to purchase. 
 
-This will return the following JSON: 
+For instance, this request `/api/v1/subscribe?customer=daniel@example.com&tea=Chamomile&frequency=Monthly` will return the following JSON: 
 
-This will return the following JSON endpoint 
+
+<img width="611" alt="Screenshot 2024-10-05 at 4 13 09 PM" src="https://github.com/user-attachments/assets/bc73f96d-6173-4a9e-ad2c-3aefd23dfe59">
+
+
 ### `Cancel a customer’s tea subscription`
+To cancel a customer's tea subscription you must hist the following API endpoint `api/v1/unsubscribe?subscription=subscription_id`. This endpoint requires you provide it with the id of the subscription you would like to cancel. Using the endpoint below you can get a collection of all subscriptions for a particular customer and then find the id of the particular subscription your would like cancelled.
+
+Hitting this endpoint would look as follows:
+Request: `api/v1/unsubscribe?subscription=1`
+
+JSON response: 
+
+
+
+
 
 ### `See all of a customer’s subsciptions (active and cancelled)`
+To see all of a customer's tea subscriptions you must hist the following API endpoint `api/v1/subscriptions?customer=customer_id`. This endpoint requires you provide it with the id of the customer you would like to see the subscriptions for.
+
+Hitting this endpoint would look as follows:
+
+Request: `api/v1/subscriptions?customer=1` 
+
+JSON response: 
+
+
+
+
 
 ## Database and Schema 
 The database and schema for the Tea Subscription Service API is listed below. 
