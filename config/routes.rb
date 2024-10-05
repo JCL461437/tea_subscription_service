@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   
   namespace :api do 
     namespace :v1 do 
-      resources :subscription, only: [:create, :destroy, :index]
+      # resources :subscription, only: [:create, :destroy, :index]
+
+      post "/subscribe", to: "subscriptions#create"
+      delete "/unsubscribe", to: "subscriptions#destroy"
+      get "/subscriptions", to: "subscriptions#index"
     end
   end
   # Defines the root path route ("/")
