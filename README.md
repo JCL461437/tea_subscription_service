@@ -28,9 +28,10 @@ Request: `api/v1/unsubscribe?subscription=1`
 JSON response: 
 
 
+![Screenshot 2024-10-05 at 5 54 41 PM](https://github.com/user-attachments/assets/b433678c-af10-4491-a6f0-77676a6ac86a)
 
 
-
+NOTE: This is the same JSON structure as the prior endpoint
 ### `See all of a customer’s subsciptions (active and cancelled)`
 To see all of a customer's tea subscriptions you must hist the following API endpoint `api/v1/subscriptions?customer=customer_id`. This endpoint requires you provide it with the id of the customer you would like to see the subscriptions for.
 
