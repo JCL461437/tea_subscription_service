@@ -10,8 +10,6 @@ class Subscription < ApplicationRecord
   def change_status
     if self.status == "active"
       self.status = "cancelled"
-    elsif self.status == "cancelled"
-      self.status = "active"
     end
   end
 end
