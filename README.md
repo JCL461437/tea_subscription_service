@@ -40,4 +40,3 @@ The database and schema for the Tea Subscription Service API is listed below.
 
 * How to run the test suite: To run the test suire for this application, run the following command in the terminal while in the application directory `bundle exec rspec spec`. If you would like to run only particular tests within the larger spec directory add those after spec as though you were navigating through the file structure. For example, `bundle exec rspec spec/requests`.
 
-* Deployment instructions
