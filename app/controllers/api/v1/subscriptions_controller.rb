@@ -31,6 +31,11 @@ class Api::V1::SubscriptionsController < ApplicationController
   def update
     subscription = Subscription.find(params[:subscription])
 
+    if subscription.blank?
+      render json: { error: 'Attempt to unsubscribe failed, try entering a valid subscription id' }, status: 404
+      return
+    end
+
     subscription.cancel
 
     render json: SubscriptionSerializer.new(subscription)
