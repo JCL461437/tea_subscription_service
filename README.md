@@ -33,16 +33,17 @@ JSON response:
 
 NOTE: This is the same JSON structure as the prior endpoint
 ### `See all of a customer’s subsciptions (active and cancelled)`
-To see all of a customer's tea subscriptions you must hist the following API endpoint `api/v1/subscriptions?customer=customer_id`. This endpoint requires you provide it with the id of the customer you would like to see the subscriptions for.
+To see all of a customer's tea subscriptions you must hist the following API endpoint `api/v1/subscriptions?customer=customer_email`. This endpoint requires you provide it with the email of the customer you would like to see the subscriptions for.
+
 
 Hitting this endpoint would look as follows:
 
-Request: `api/v1/subscriptions?customer=1` 
+Request: `api/v1/subscriptions?customer=billy@example.com` 
 
 JSON response: 
 
 
-
+<img width="423" alt="Screenshot 2024-10-05 at 6 13 31 PM" src="https://github.com/user-attachments/assets/cb3baed2-8f96-434a-a6cf-a6faea73a01d">
 
 
 ## Database and Schema 
