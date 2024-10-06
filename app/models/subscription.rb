@@ -6,4 +6,10 @@ class Subscription < ApplicationRecord
   validates :price, presence: true, numericality: true 
   validates :status, presence: true
   validates :frequency, presence: true
+
+  def cancel
+    if self.status == "active"
+      self.status = "cancelled"
+    end
+  end
 end

@@ -97,7 +97,7 @@ subscription4 = Subscription.create!(
   tea: tea4,
   title: 'Jasmine Tea Subscription',
   price: 18.75,
-  status: 'paused',
+  status: 'active',
   frequency: 'monthly'
 )
 

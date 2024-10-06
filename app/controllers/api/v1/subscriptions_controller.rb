@@ -29,10 +29,31 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def update
+    begin
+      subscription = Subscription.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      render json: { error: 'Attempt to unsubscribe failed, try entering a valid subscription id' }, status: 404
+      return
+    end
 
+    subscription.cancel
+
+    render json: SubscriptionSerializer.new(subscription)
   end
 
   def index
-    
+    if params[:customer].blank?
+      render json: { error: 'Request for customer subscriptions failed, enter a customer email' }, status: :bad_request
+      return
+    end
+  
+    begin
+      customer = Customer.find_by!(email: params[:customer])
+    rescue ActiveRecord::RecordNotFound
+      render json: { error: 'Request for customer subscriptions failed, that email does not exist' }, status: :not_found
+      return
+    end
+
+    render json: CustomerSubscriptionsSerializer.new(customer)
   end
 end
