@@ -42,10 +42,15 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def index
+    if params[:customer].blank?
+      render json: { error: 'Request for customer subscriptions failed, enter a customer email' }, status: :bad_request
+      return
+    end
+  
     begin
-      customer = Customer.find_by(email: params[:customer])
+      customer = Customer.find_by!(email: params[:customer])
     rescue ActiveRecord::RecordNotFound
-      render json: { error: 'Request for customer subscriptions failed, try re-entering your customer email' }, status: 404
+      render json: { error: 'Request for customer subscriptions failed, that email does not exist' }, status: :not_found
       return
     end
 
