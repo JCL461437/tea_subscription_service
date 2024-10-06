@@ -42,6 +42,13 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def index
+    begin
+      customer = Customer.find_by(email: params[:customer])
+    rescue ActiveRecord::RecordNotFound
+      render json: { error: 'Request for customer subscriptions failed, try re-entering your customer email' }, status: 404
+      return
+    end
 
+    render json: CustomerSubscriptionsSerializer.new(customer)
   end
 end
