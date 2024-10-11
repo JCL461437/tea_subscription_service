@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-10-11T09:22:46-06:00">2024-10-11T09:22:46-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-10-11T09:59:57-06:00">2024-10-11T09:59:57-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -609,7 +609,7 @@
 
             
 
-            <code class="ruby">      subscription = Subscription.find(params[:id])</code>
+            <code class="ruby">      subscription = Subscription.find(params[:subscription])</code>
           </li>
         </div>
       
@@ -4811,7 +4811,7 @@
 
             
 
-            <code class="ruby">      patch &quot;/api/v1/unsubscribe&quot;, params: { id: subscription.id }</code>
+            <code class="ruby">      patch &quot;/api/v1/unsubscribe&quot;, params: { subscription: subscription.id }</code>
           </li>
         </div>
       
