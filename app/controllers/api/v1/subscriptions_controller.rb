@@ -30,7 +30,7 @@ class Api::V1::SubscriptionsController < ApplicationController
 
   def update
     begin
-      subscription = Subscription.find(params[:id])
+      subscription = Subscription.find(params[:subscription])
     rescue ActiveRecord::RecordNotFound
       render json: { error: 'Attempt to unsubscribe failed, try entering a valid subscription id' }, status: 404
       return
