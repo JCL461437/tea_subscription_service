@@ -9,7 +9,7 @@ RSpec.describe "PATCH /api/v1/unsubscribe", type: :request do
 
       expect(subscription.status).to eq("active")
 
-      patch "/api/v1/unsubscribe", params: { id: subscription.id }
+      patch "/api/v1/unsubscribe", params: { subscription: subscription.id }
 
       expect(response).to have_http_status(:success)
 
